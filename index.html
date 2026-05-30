@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dindaflorist_ | Premium Bouquet & Gift Shop - Owner: Dinda Putri Ramadani</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Configuration untuk Tema Pink & Gold -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#FFD1DC',
+                        'baby-pink': '#FBC4D4',
+                        'dusty-rose': '#C28C85',
+                        'warm-gold': '#E6B89C',
+                        'charcoal': '#4A3B32',
+                        'cream-bg': '#FAFAFA',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-cream-bg font-sans text-charcoal antialiased">
+
+    <!-- 1. NAVBAR (NAVIGASI) -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-baby-pink/30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex flex-col">
+                <span class="font-serif text-2xl lg:text-3xl font-semibold tracking-wide text-dusty-rose">dindaflorist_</span>
+                <span class="text-[10px] tracking-[0.2em] uppercase text-warm-gold font-medium -mt-1">Bouquet & Gifts</span>
+            </div>
+            
+            <!-- Menu Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#" class="text-dusty-rose border-b-2 border-baby-pink pb-1">Home</a>
+                <a href="#shop" class="hover:text-dusty-rose transition">Shop</a>
+                <a href="#about" class="hover:text-dusty-rose transition">Tentang Kami</a>
+                <a href="#blog" class="hover:text-dusty-rose transition">Blog</a>
+                <a href="#contact" class="hover:text-dusty-rose transition">Kontak</a>
+            </div>
+
+            <!-- Icons (Keranjang & Wishlist) -->
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-dusty-rose hover:text-warm-gold transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </button>
+                <button class="relative p-2 text-dusty-rose hover:text-warm-gold transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    <span class="absolute top-0 right-0 bg-warm-gold text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION (BANNER UTAMA) -->
+    <header class="relative bg-gradient-to-r ifrom-white via-[#FFF5F7] to-[#FFEBF0] overflow-hidden py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Teks -->
+            <div class="space-y-6 text-center md:text-left z-10">
+                <span class="inline-block bg-white border border-baby-pink/50 text-dusty-rose text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">🌸 dindaflorist_ - Fresh & Handcrafted</span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-tight">
+                    Ungkapkan Perasaanmu Lewat Buket yang <span class="text-dusty-rose font-italic">Memesona</span>
+                </h1>
+                <p class="text-gray-600 max-w-md mx-auto md:mx-0 text-sm sm:text-base">
+                    Rangkaian bunga aesthetic karya Dinda Putri Ramadani, dibuat dengan ketulusan untuk setiap momen magis Anda.
+                </p>
+                <div class="pt-2">
+                    <a href="#shop" class="inline-block bg-gradient-to-r from-baby-pink to-warm-gold text-white font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-baby-pink/50 hover:shadow-xl hover:scale-105 transition duration-300">
+                        Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+            <!-- Gambar Banner -->
+            <div class="relative flex justify-center">
+                <div class="absolute inset-0 bg-gradient-to-tr from-baby-pink/30 to-transparent rounded-full filter blur-3xl w-72 h-72 mx-auto my-auto"></div>
+                <!-- Gambar Hero Aesthetic -->
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=600&auto=format&fit=crop" alt="Buket Bunga Cantik" class="rounded-2xl shadow-xl w-4/5 object-cover aspect-[4/5] border-4 border-white relative z-10">
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. KATEGORI HIGHLIGHT -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-3xl text-charcoal">Cari Hadiah Berdasarkan Momen</h2>
+            <div class="h-0.5 w-16 bg-warm-gold mx-auto mt-3"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6">
+            <!-- Kategori Card -->
+            <div class="bg-white p-6 rounded-2xl text-center border border-baby-pink/20 hover:border-baby-pink hover:shadow-md transition group cursor-pointer">
+                <div class="w-16 h-16 bg-[#FFF0F3] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">🎓</div>
+                <h3 class="font-medium text-sm">Buket Wisuda</h3>
+            </div>
+            <div class="bg-white p-6 rounded-2xl text-center border border-baby-pink/20 hover:border-baby-pink hover:shadow-md transition group cursor-pointer">
+                <div class="w-16 h-16 bg-[#FFF0F3] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">🎂</div>
+                <h3 class="font-medium text-sm">Ulang Tahun</h3>
+            </div>
+            <div class="bg-white p-6 rounded-2xl text-center border border-baby-pink/20 hover:border-baby-pink hover:shadow-md transition group cursor-pointer">
+                <div class="w-16 h-16 bg-[#FFF0F3] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">💖</div>
+                <h3 class="font-medium text-sm">Valentine</h3>
+            </div>
+            <div class="bg-white p-6 rounded-2xl text-center border border-baby-pink/20 hover:border-baby-pink hover:shadow-md transition group cursor-pointer">
+                <div class="w-16 h-16 bg-[#FFF0F3] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">💵</div>
+                <h3 class="font-medium text-sm">Buket Uang</h3>
+            </div>
+            <div class="bg-white p-6 rounded-2xl text-center border border-baby-pink/20 hover:border-baby-pink hover:shadow-md transition group cursor-pointer">
+                <div class="w-16 h-16 bg-[#FFF0F3] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">🎁</div>
+                <h3 class="font-medium text-sm">Hamper Gift</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SHOP PAGE SECTION (DAFTAR PRODUK DENGAN GAMBAR NYATA USER) -->
+    <section id="shop" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="font-serif text-3xl text-charcoal">Koleksi Terpopuler dindaflorist_</h2>
+                    <p class="text-sm text-gray-500 mt-1">Karya langsung Dinda Putri Ramadani untuk senyum terbaik mereka.</p>
+                </div>
+                <!-- Filter Sederhana -->
+                <div class="flex flex-wrap gap-2 mt-4 md:mt-0 text-xs font-medium">
+                    <button class="px-4 py-2 rounded-full bg-baby-pink text-white">Semua</button>
+                    <button class="px-4 py-2 rounded-full bg-cream-bg text-gray-600 hover:bg-baby-pink/20">Harga Terendah</button>
+                    <button class="px-4 py-2 rounded-full bg-cream-bg text-gray-600 hover:bg-baby-pink/20">Warna Pink</button>
+                </div>
+            </div>
+
+            <!-- Grid Produk dengan Integrasi Gambar Nyata User -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Produk 1 (WhatsApp Image 2026-05-30 at 08.37.44.jpeg) -->
+                <div class="group relative bg-white rounded-2xl p-4 border border-baby-pink/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="bg-cream-bg rounded-xl overflow-hidden aspect-square mb-4 relative flex items-center justify-center p-2">
+                        <img src="WhatsApp Image 2026-05-30 at 08.37.44.jpeg" alt="Luxe Pink & Purple Harmony" class="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 left-2 bg-warm-gold text-white text-[10px] font-semibold px-2 py-1 rounded">HOT</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 group-hover:text-dusty-rose transition text-sm">Luxe Pink & Purple Harmony</h3>
+                    <p class="text-[11px] text-gray-400 mb-2">Mawar Pink & Ungu di Wrapping Soft Pink</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="font-semibold text-charcoal text-sm">Rp 345.000</span>
+                        <button class="bg-baby-pink/20 hover:bg-baby-pink text-dusty-rose hover:text-white p-2.5 rounded-full transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 2 (WhatsApp Image 2026-05-30 at 08.37.40 (1).jpeg) -->
+                <div class="group relative bg-white rounded-2xl p-4 border border-baby-pink/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="bg-cream-bg rounded-xl overflow-hidden aspect-square mb-4 relative flex items-center justify-center p-2">
+                        <img src="WhatsApp Image 2026-05-30 at 08.37.40 (1).jpeg" alt="Satin Engagement Bouquet" class="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 left-2 bg-dusty-rose text-white text-[10px] font-semibold px-2 py-1 rounded">SPECIAL</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 group-hover:text-dusty-rose transition text-sm">Magenta Satin Engagement</h3>
+                    <p class="text-[11px] text-gray-400 mb-2">Mawar Satin Magenta dengan Pita Emas</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="font-semibold text-charcoal text-sm">Rp 420.000</span>
+                        <button class="bg-baby-pink/20 hover:bg-baby-pink text-dusty-rose hover:text-white p-2.5 rounded-full transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 3 (WhatsApp Image 2026-05-30 at 08.37.38 (1).jpeg) -->
+                <div class="group relative bg-white rounded-2xl p-4 border border-baby-pink/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="bg-cream-bg rounded-xl overflow-hidden aspect-square mb-4 flex items-center justify-center p-2 relative">
+                        <img src="WhatsApp Image 2026-05-30 at 08.37.38 (1).jpeg" alt="Gerbera Dream Bouquet" class="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-500">
+                         <span class="absolute top-2 left-2 bg-warm-gold text-white text-[10px] font-semibold px-2 py-1 rounded">POPULER</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 group-hover:text-dusty-rose transition text-sm">Blue Gerbera Dream</h3>
+                    <p class="text-[11px] text-gray-400 mb-2">Gerbera Biru & Mawar Pink Aesthetic</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="font-semibold text-charcoal text-sm">Rp 295.000</span>
+                        <button class="bg-baby-pink/20 hover:bg-baby-pink text-dusty-rose hover:text-white p-2.5 rounded-full transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produk 4 (WhatsApp Image 2026-05-30 at 08.37.38.jpeg) -->
+                <div class="group relative bg-white rounded-2xl p-4 border border-baby-pink/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="bg-cream-bg rounded-xl overflow-hidden aspect-square mb-4 flex items-center justify-center p-2 relative">
+                        <img src="WhatsApp Image 2026-05-30 at 08.37.38.jpeg" alt="Signature Money Bouquet" class="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 left-2 bg-baby-pink text-dusty-rose text-[10px] font-semibold px-2 py-1 rounded">SIGNATURE💵</span>
+                    </div>
+                    <h3 class="font-medium text-gray-800 group-hover:text-dusty-rose transition text-sm">Signature 10k Money Bouquet</h3>
+                    <p class="text-[11px] text-gray-400 mb-2">Buket Uang Kertas 10k & Mawar Pink</p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="font-semibold text-charcoal text-sm">Rp 550.000</span>
+                        <button class="bg-baby-pink/20 hover:bg-baby-pink text-dusty-rose hover:text-white p-2.5 rounded-full transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TENTANG KAMI, VISI MISI & OWNER DENGAN FOTO REAL -->
+    <section id="about" class="py-20 bg-gradient-to-b from-white to-cream-bg">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center grid md:grid-cols-3 gap-8 items-center">
+             <!-- Foto Owner Terintegrasi -->
+             <div class="md:col-span-1 flex justify-center order-2 md:order-1">
+                 <div class="w-56 h-56 rounded-full border-4 border-white shadow-xl bg-soft-pink flex items-center justify-center overflow-hidden">
+                     <img src="WhatsApp Image 2026-05-30 at 08.48.50.jpeg" alt="Dinda Putri Ramadani" class="w-full h-full object-cover object-center scale-110">
+                 </div>
+             </div>
+             
+             <!-- Teks Tentang Kami -->
+             <div class="md:col-span-2 text-left order-1 md:order-2">
+                 <span class="text-xs font-semibold tracking-widest text-warm-gold uppercase block mb-3">Our Story & Owner</span>
+                 <h2 class="font-serif text-4xl text-charcoal mb-6">dindaflorist_ by Dinda Putri Ramadani</h2>
+                 <div class="w-12 h-0.5 bg-baby-pink mb-8"></div>
+                 
+                 <blockquote class="font-serif text-lg md:text-xl italic text-dusty-rose mb-6 leading-relaxed">
+                     "Menemani setiap momen spesialmu dengan buket bunga yang indah, tulus, dan berkesan."
+                 </blockquote>
+                 
+                 <p class="text-gray-500 text-sm md:text-base max-w-3xl leading-relaxed">
+                     Kami percaya bahwa bunga adalah pesan hati yang tulus. Dinda Putri Ramadani, owner dindaflorist_, secara pribadi memastikan setiap buket dirangkai dengan kasih sayang dan keahlian untuk menciptakan momen magis bagi Anda dan orang tersayang.
+                 </p>
+             </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONI PELANGGAN -->
+    <section class="py-16 bg-[#FFF5F7]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl text-charcoal">Apa Kata Mereka?</h2>
+                <p class="text-xs text-warm-gold tracking-widest uppercase mt-1">Real Stories from dindaflorist_ Lovers</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testi 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-baby-pink/20">
+                    <div class="flex text-warm-gold space-x-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-sm text-gray-600 italic">"Buket wisudanya cantik banget! Kertas wrapping pink-nya elegan dan bunganya bener-bener fresh pas dateng. Rangkaian Kak Dinda emang juara!"</p>
+                    <h4 class="mt-4 font-semibold text-xs text-dusty-rose uppercase tracking-wider">— Clarissa M., Mahasiswi</h4>
+                </div>
+                <!-- Testi 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-baby-pink/20">
+                    <div class="flex text-warm-gold space-x-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-sm text-gray-600 italic">"Admin dindaflorist_ super ramah pas di-WhatsApp, bisa custom kartu ucapan pake tulisan tangan estetik juga. Pacar saya seneng banget pas nerima pas Valentine."</p>
+                    <h4 class="mt-4 font-semibold text-xs text-dusty-rose uppercase tracking-wider">— Amanda R., Wiraswasta</h4>
+                </div>
+                <!-- Testi 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-baby-pink/20">
+                    <div class="flex text-warm-gold space-x-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-sm text-gray-600 italic">"Pengiriman tepat waktu dan packing-nya aman pakai kardus khusus jadi bunganya nggak layu atau rusak di jalan. Sangat profesional dindaflorist_!"</p>
+                    <h4 class="mt-4 font-semibold text-xs text-dusty-rose uppercase tracking-wider">— Nabila Z., Karyawan Swasta</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. HUBUNGI KAMI (KONTAK & SOSIAL MEDIA) -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
+            <!-- Info Kontak -->
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl text-charcoal">Ada Pertanyaan Khusus, Kak?</h2>
+                <p class="text-gray-500 text-sm">Tim dindaflorist_ siap membantu merealisasikan buket bunga custom impian Anda untuk hari pernikahan, lamaran, ataupun acara korporat. Hubungi kami!</p>
+                
+                <div class="space-y-4 pt-4 text-sm text-gray-600">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">💬</span>
+                        <a href="https://wa.me/628123456789" target="_blank" class="hover:text-dusty-rose font-medium text-emerald-600">WhatsApp: +62 812-3456-789</a>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xl">✉️</span>
+                        <span>hello@dindaflorist.com</span>
+                    </div>
+                </div>
+
+                <!-- Tautan Marketplace / Medsos -->
+                <div class="pt-6">
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Temukan dindaflorist_ Di</h4>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <a href="#" class="px-4 py-2 bg-[#FFF0F3] text-dusty-rose rounded-lg hover:bg-baby-pink hover:text-white transition">Instagram: dindaflorist_</a>
+                        <a href="#" class="px-4 py-2 bg-[#FFF0F3] text-dusty-rose rounded-lg hover:bg-baby-pink hover:text-white transition">TikTok: dindaflorist_</a>
+                        <a href="#" class="px-4 py-2 bg-orange-50 text-orange-600 border border-orange-200 rounded-lg hover:bg-orange-600 hover:text-white transition">Shopee: dindaflorist_</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulir Pemesanan Sederhana -->
+            <div class="bg-cream-bg p-8 rounded-2xl border border-baby-pink/30">
+                <h3 class="font-serif text-xl mb-4 text-center text-dusty-rose">Konsultasi / Pesanan</h3>
+                <form class="space-y-4 text-xs">
+                    <div>
+                        <label class="block text-gray-600 mb-1 font-medium">Nama Lengkap</label>
+                        <input type="text" class="w-full p-3 rounded-lg border border-baby-pink/30 focus:outline-none focus:border-baby-pink bg-white" placeholder="Nama Anda...">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 mb-1 font-medium">Pilihan Momen</label>
+                        <select class="w-full p-3 rounded-lg border border-baby-pink/30 focus:outline-none focus:border-baby-pink bg-white text-gray-500">
+                            <option>Buket Wisuda</option>
+                            <option>Buket Ulang Tahun</option>
+                            <option>Buket Valentine</option>
+                            <option>Lainnya (Custom)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 mb-1 font-medium">Catatan / Pesan Kartu</label>
+                        <textarea rows="3" class="w-full p-3 rounded-lg border border-baby-pink/30 focus:outline-none focus:border-baby-pink bg-white" placeholder="Tulis instruksi khusus atau tulisan kartu ucapan..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-dusty-rose hover:bg-charcoal text-white font-semibold p-3.5 rounded-lg transition tracking-wide text-sm">
+                        Kirim Pesanan ke WhatsApp dindaflorist_
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-charcoal text-[#F5EBE6] py-12 border-t border-warm-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:text-left items-center">
+            <div class="mb-6 md:mb-0">
+                <p class="font-serif text-xl tracking-wide text-warm-gold">dindaflorist_</p>
+                <p class="text-[11px] text-gray-400 mt-1 mb-1">© 2026 dindaflorist_. All rights reserved.</p>
+                <p class="text-[10px] text-warm-gold/70 font-medium">Owner: Dinda Putri Ramadani</p>
+            </div>
+            <div class="flex justify-center flex-col md:flex-row md:space-x-6 text-xs text-gray-400 space-y-2 md:space-y-0 mt-4 md:mt-0">
+                <a href="#" class="hover:text-warm-gold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-warm-gold transition">Terms of Service</a>
+                <a href="#" class="hover:text-warm-gold transition">FAQ</a>
+                <a href="#" class="hover:text-warm-gold transition">@dindaflorist_</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
